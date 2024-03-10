@@ -1,0 +1,110 @@
+
+/* Estilos generales */
+body {
+    
+    width: 1300px;
+    font-family: Arial, sans-serif;
+    background-color: hsl(208, 87%, 75%); /* Azul claro */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura de la ventana del navegador */
+}
+
+.container {
+   
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-around; /* Espacia uniformemente los elementos */
+    height: 100vh; /* Altura de la ventana del navegador */
+}
+
+.video-container {
+    width: 50%; /* El video ocupa el 20% del contenedor */
+    height: 80vh; /* El video ocupa el 80% del alto disponible */
+    margin: 0 10px; /* Margen de 3px con respecto al formulario */
+    box-shadow: 0 2px 2px #0d0e0d;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el video */
+    align-items: center; /* Centra verticalmente el video */
+}
+
+.video-container video {
+    width: 300px;
+    max-width: 100%; /* Asegura que el video no sea más ancho que el contenedor */
+    height: 100%; /* Permite que el video mantenga su relación de aspecto */
+    object-fit: cover; /* Para que el video se ajuste al contenedor */
+}
+
+.formulario-container {
+    width: 100%; /* El formulario ocupa el 64% del contenedor */
+    max-width: 900px; /* Ancho máximo del formulario */
+    height: 80vh; /* El formulario ocupa el 80% del alto disponible */
+    overflow-y: auto; /* Agrega scroll vertical si es necesario */
+    padding: 20px;
+    background-color: #498aeb; /* Blanco */
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    color: #f2f8f2;
+}
+
+#texingre {
+    color: #fafdfa;
+    margin-top: 0;
+    font-size: 40px;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Gris */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formulario input[type="button"] {
+    width: auto;
+    margin-bottom: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#formulario input[type="button"]:hover {
+    background-color: #1e90ff; /* Azul Dodger */
+}
+
+#formulario input[type="text"]:focus,
+#formulario input[type="date"]:focus {
+    outline: none;
+    border-color: #4169e1; /* Azul Royal */
+    box-shadow: 0 0 8px rgba(65, 105, 225, 0.6); /* Sombra */
+}
+
+#resultados {
+    text-align: left;
+    width: 100%;
+    height: 200px;
+    font-size: 40px;
+}
+
+#descripcion {
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+#tex_busqueda {
+    background-color: #4ec7ff;
+    color: #f0f8ff;
+    text-decoration: double;
+    box-shadow: 3px 2px #333;
+}
